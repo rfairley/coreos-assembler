@@ -13,7 +13,7 @@ and to keep them as similar as possible:
  - Local development ("test a kernel change")
  - Be a production build system orchestrated by an external tool (e.g. Jenkins)
 
-See [fedora-coreos-ci](https://github.com/dustymabe/fedora-coreos-ci) as an
+See [fedora-coreos-pipeline](https://github.com/coreos/fedora-coreos-pipeline) as an
 example pipeline.
 
 Getting started - prerequisites
@@ -131,7 +131,7 @@ $ alias coreos-assembler= podman run --rm --net=host -ti --privileged --userns=h
 ```
 
 To completely rebuild the coreos-assembler container image locally, execute
-`$ podman build .` from the `coreos-assembler` repository. You can upload your
+`$ podman build .` from the `coreos-assembler` repository.  You can upload your
 built image to a registry such as quay.io by doing the following:
 
 ```
