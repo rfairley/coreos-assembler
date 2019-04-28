@@ -78,7 +78,7 @@ install_rpms() {
     yum clean all
 
     # shellcheck source=src/cmdlib.sh
-    . "${srcdir}/cmdlib.sh"
+    . "${srcdir}/src/cmdlib.sh"
     depcheck "${deps} ${archdeps}"
 }
 
